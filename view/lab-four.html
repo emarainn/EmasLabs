@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nimphiue | Lab 4</title>
+    <!-- style sheets -->
+    <!-- / links to the root of the foler. so you do /css/styles.css -->
+    <link rel="stylesheet" href="/css/lab-4.css" />
+    <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="/css/stylesheet.css" />
+  </head>
+  <body>
+    <header>
+      <div id="header-placeholder"></div>
+    </header>
+
+    <main>
+      <section class="widgets">
+        <!-- ODD OR EVEN -->
+        <div class="widget">
+          <header>
+            <h2>Odd / Even</h2>
+          </header>
+          <div class="widget-body">
+            <div class="results">
+              <div class="widget-content">
+                <label for="odd-even" style="padding-right: 10px"
+                  >Enter Number:</label
+                >
+                <input type="number" id="odd-even" style="width: 50%" />
+              </div>
+            </div>
+            <p id="odd-even-result">The Number is...</p>
+          </div>
+        </div>
+
+        <!-- Numeric Truthy/Falsey -->
+        <div class="widget">
+          <header>
+            <h2>Numeric Truthy/Falsey</h2>
+          </header>
+          <div class="widget-body">
+            <div class="results">
+              <div class="widget-content">
+                <label for="number" style="margin-right: 10px"
+                  >Enter Text:</label
+                >
+                <input type="number" id="number-tf" style="width: 50%" />
+              </div>
+            </div>
+            <p id="numeric-result" style="margin-bottom: 20px">
+              Numeric value: True or False
+            </p>
+          </div>
+        </div>
+
+        <!-- Text Truthy/Falsey -->
+        <div class="widget">
+          <header>
+            <h2>Text Truthy/Falsey</h2>
+          </header>
+          <div class="widget-body">
+            <div class="results">
+              <div class="widget-content">
+                <label for="text-tf" style="margin-right: 10px"
+                  >Enter Text:</label
+                >
+                <input type="text" id="text-tf" style="width: 50%; " />
+              </div>
+            </div>
+            <p id="text-result" style="margin-bottom: 20px">
+              Text value: True or False
+            </p>
+          </div>
+        </div>
+
+        <!-- Logical Or -->
+        <div class="widget">
+          <header>
+            <h2>Logical Or</h2>
+          </header>
+
+          <div
+            style="
+              padding: 20px;
+              background-color: #f9f9f9;
+              border-radius: 8px;
+              width: 90%;
+              margin: 20px auto;
+            "
+          >
+            <h3>Value 1</h3>
+
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                margin-bottom: 10px;
+                padding-left: 4px;
+                margin-top: 10px;
+              "
+            >
+              <label for="value-one-true">true</label>
+              <input type="radio" name="or-value-one" id="or-value-one-true" />
+
+              <label for="value-one-false">false</label>
+              <input
+                type="radio"
+                name="or-value-one"
+                id="or-value-one-false"
+                checked
+              />
+            </div>
+
+            <hr />
+
+            <h3 style="margin-top: 20px">Value 2</h3>
+
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                padding-left: 4px;
+                margin-top: 10px;
+              "
+            >
+              <label for="value-two-true">true</label>
+              <input type="radio" name="or-value-two" id="or-value-two-true" />
+
+              <label for="value-two-false">false</label>
+              <input
+                type="radio"
+                name="or-value-two"
+                id="or-value-two-false"
+                checked
+              />
+            </div>
+
+            <hr style="margin-bottom: 23px" />
+            <div class="results">
+              <div class="widget-content">
+                <h3 id="or-result">false || false = false</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SWITCH -->
+        <div class="widget">
+          <header>
+            <h2>SWITCH</h2>
+          </header>
+          <div class="widget-body">
+            <div class="results">
+              <p>enter text and select an option</p>
+            </div>
+            <select id="switch-choice">
+              <option value="" disabled selected>This is disabled</option>
+              <option value="alert">Alert</option>
+              <option value="console">Console</option>
+              <option value="text">Text</option>
+            </select>
+            <div class="results">
+              <div class="widget-content">
+                <label for="switch-output">Text to output:</label>
+                <input type="text" value="Change Me!!" id="switch-output" />
+              </div>
+            </div>
+            <p id="switch-result">Text: Change Me!!</p>
+          </div>
+        </div>
+
+        <!-- Logical And -->
+        <div class="widget">
+          <header>
+            <h2>Logical And</h2>
+          </header>
+
+          <div
+            style="
+              padding: 20px;
+              background-color: #f9f9f9;
+              border-radius: 8px;
+              width: 90%;
+              margin: 20px auto;
+            "
+          >
+            <h3>Value 1</h3>
+
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                margin-bottom: 10px;
+                padding-left: 4px;
+                margin-top: 10px;
+              "
+            >
+              <label for="value-one-true">true</label>
+              <input
+                type="radio"
+                name="and-value-one"
+                id="value-one-true"
+                checked
+              />
+
+              <label for="value-one-false">false</label>
+              <input type="radio" name="and-value-one" id="value-one-false" />
+            </div>
+
+            <hr />
+
+            <h3 style="margin-top: 20px">Value 2</h3>
+
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                padding-left: 4px;
+                margin-top: 10px;
+              "
+            >
+              <label for="value-two-true">true</label>
+              <input
+                type="radio"
+                name="and-value-two"
+                id="value-two-true"
+                checked
+              />
+
+              <label for="value-two-false">false</label>
+              <input type="radio" name="and-value-two" id="value-two-false" />
+            </div>
+
+            <hr style="margin-bottom: 23px" />
+            <div class="results">
+              <div class="widget-content">
+                <h3 id="and-result">true && true = true</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CONFIRM BUTTON -->
+        <div class="widget">
+          <header>
+            <h2>Confirm Button</h2>
+          </header>
+          <div class="widget-body">
+            <div class="results">
+              <h2 id="confirm-paragraph">click button</h2>
+            </div>
+            <div class="widget-content">
+              <button type="button" id="confirm-button">Click Me!</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- AM or PM -->
+        <div class="widget">
+          <header>
+            <h2>AM or PM</h2>
+          </header>
+          <div class="widget-body">
+            <div class="results">
+              <h3 id="am-pm-result">It is currently:</h3>
+            </div>
+            <div class="widget-content">
+              <button type="button" id="am-pm-button">Is it AM or PM?</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div id="footer-placeholder"></div>
+    </footer>
+
+    <!-- script -->
+    <!-- you put scripts at the bottom of the page bacuase you want the html to load first -->
+    <script src="/js/lab-4.js"></script>
+    <script src="/js/snippet.js"></script>
+  </body>
+</html>

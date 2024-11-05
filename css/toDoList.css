@@ -1,0 +1,90 @@
+input[type="text"] {
+  width: 60%;
+  padding: 10px;
+}
+
+button {
+  padding: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  padding: 5px;
+}
+
+.remove {
+  color: red;
+  cursor: pointer;
+}
+
+#to-do-list {
+  padding-left: 25%;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 20px;
+  width: 66%;
+  display: none; /* Hidden by default */
+}
+
+.card-title {
+  font-weight: bold;
+  font-size: 1.25pc;
+}
+
+.crossed-out {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.remove {
+  color: red;
+  cursor: pointer;
+}
+
+#taskCount{
+    font-size: 12px;
+    color: gray;
+    margin-left: 70%;
+}
+
+#trashBtn{
+    margin-left: 7px;
+}
+
+.task-checkbox {
+    margin-right: 6px;
+}
+
+.toast {
+    display: none; /* Hide by default */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #505050;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+.toast button {
+    margin-left: 10px;
+    background-color: #e12626; /* Red background */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.toast button:hover {
+    background-color: #f35a4f; /* Darker red on hover */
+}

@@ -1,0 +1,113 @@
+:root {
+    --color-dark: #267365;
+    --color-dar: #F28705;
+    --color-light: #5E8C30;
+    --color-accent: #F2421B;
+    --color-link: #E8003C;
+    --color-hover: #F29F05;
+}
+
+body {
+    background-color: #f0f0f0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+/* Container for the main content */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+/* Card styling */
+.card {
+    background-color: white;
+
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 23.5pc;
+    height: 325px;
+}
+
+.card-body{
+    padding: 20px;
+}
+
+.console-output p {
+    padding-bottom: 20px;
+}
+
+/* User input field */
+.user-input {
+    display: flex;
+    align-items: center; /* Aligns items vertically */
+    gap: 10px; /* Adds space between the input and button */
+  }
+
+  .user-input input {
+    flex: 1; /* Makes the input grow to take up available space */
+    padding: 8px;
+    font-size: 16px;
+  }
+
+  .user-input button {
+    padding: 8px 12px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+/* Button group styling */
+.button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.button-group button {
+    background-color: var(--color-dar);
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button-group button:hover {
+    background-color: var(--color-accent);
+}
+
+#widgets {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2em;
+}
+
+.widget {
+    width: 100%;
+    background-color: #FFFFFF;
+}
+
+.widget > header {
+    padding: 1em;
+    color: #FFFFFF;
+    background-color: var(--color-accent);
+    border-radius: 8px 8px 0 0;
+}
+
+.widget > .widget_body {
+    padding: 1em;
+}
+

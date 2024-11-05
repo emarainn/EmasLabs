@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/stylesheet.css" />
+    <link rel="stylesheet" href="/css/toDoList.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  </head>
+  <body>
+    <header>
+      <div id="header-placeholder"></div>
+    </header>
+
+    <article style="margin-top: 25px;">
+        <div id="to-do-list">
+            <div class="list">
+                <div class="row" style="margin-bottom: 20px;">
+                    <div class="title"><h2>To Do List</h2></div>
+                    <div class="count"></div>
+                </div>
+                <input type="text" id="taskInput" placeholder="Add a new task..." />
+                <button onclick="addTask()">Add</button>
+            </div>
+
+            <div class="card" id="taskCard">
+                <div class="card-title">To Do List<span id="taskCount"></span></div>
+                <hr>
+                <div class="card-body">
+
+                    <ul id="taskList"></ul>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <div id="toast" class="toast">
+        <span>Are you sure you want to delete this item?</span>
+        <button id="confirmDelete">Yes</button>
+        <button id="cancelDelete">No</button>
+    </div>
+
+    <footer style="margin-top: 20.3pc;">
+      <div id="footer-placeholder"></div>
+    </footer>
+
+    <script src="\js\toDoList.js"></script>
+    <script src="\js\snippet.js"></script>
+  </body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nimphiue | Lab 2</title>
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/header.css">
+  <link rel="stylesheet" href="/css/stylesheet.css" />
+</head>
+
+<body>
+  <header>
+    <div id="header-placeholder"></div>
+</header>
+
+  <main class="container">
+    <article>
+      <section id="widgets">
+        <section class="card">
+          <div class="widget">
+            <header>
+              <h2>Area Calculator</h2>
+            </header>
+            <div class="widget_body">
+              <!-- results -->
+              <h2 id="area_result" style="margin: 13px 0 25px 0;">Area: 0</h2>
+              <!-- height -->
+              <div class="button-group">
+                <div class="user-input" style="margin-bottom: 10px;">
+                  <label for="height"><b>Height:</b></label>
+                  <input type="number" id="height" value="0" onchange="updateArea()" />
+                </div>
+                <!-- width -->
+                <div class="user-input">
+                  <label for="width"><b>Width:</b></label>
+                  <input type="number" id="width" value="0" onchange="updateArea()" />
+                </div>
+              </div>
+
+        </section>
+
+        <section class="card">
+          <div class="widget">
+            <header>
+              <h2>Random Number</h2>
+            </header>
+            <div class="widget_body">
+              <!-- top number -->
+              <div class="button-group">
+                <h2 id="random_result" style="padding: 10px 0 10px 0;">Random Number:</h2>
+                <div class="user-input">
+                  <label for="upper-number" id="label-upper-number">Upper Number: 50</label><br>
+                  <input type="range" id="upper-number" min="1" max="100" value="50"
+                    onchange="updateTopNumber(), generateRandom()" />
+                </div>
+                <button type="button" style="margin-top: 15px;" onclick="generateRandom()">New Number</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="card">
+          <div class="widget">
+            <header>
+              <h2>Days</h2>
+            </header>
+            <card-body>
+              <div class="widget_body">
+                <h2 id="dateDisplay" style="margin: 25px 0 25px 0;"></h2>
+                <div class="button-group">
+                  <div class="button-container">
+                    <button type="button" style="width: 170px;" onclick="getPrevDate()">Previous Day</button>
+                    <button type="button" style="width: 170px;" onclick="getNextDate()">Next Day</button>
+                    <button type="button" style=" width: 92%; margin-top: 15px;" onclick="getTodaysDate()">Todays Date</button>
+                  </div>
+                </div>
+              </div>
+            </card-body>
+          </div>
+        </section>
+    </article>
+
+
+  </main>
+  <footer>
+    <div id="footer-placeholder"></div>
+</footer>
+  <!-- script -->
+  <!-- you put scripts at the bottom of the page bacuase you want the html to load first -->
+  <script src="/js/lab-2.js"></script>
+  <script src="/js/snippet.js"></script>
+</body>
+
+</html>

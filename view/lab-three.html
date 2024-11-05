@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nimphiue | Lab 3</title>
+    <!-- style sheets -->
+     <!-- / links to the root of the foler. so you do /css/styles.css -->
+    <link rel="stylesheet" href="/css/style.css"> 
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/stylesheet.css" />
+    <link rel="stylesheet" href="/css/lab-3.css">
+</head>
+<body>
+    <header>
+        <div id="header-placeholder"></div>
+    </header>
+
+    <main class="container-two">
+        <div class="section">
+            <div class="form-container">
+                <h3>Enter Person Information</h3>
+                <input type="text" id="firstName" placeholder="First Name" required>
+                <input type="text" id="lastName" placeholder="Last Name" required>
+                <input type="number" id="age" placeholder="Age" required>
+                <input type="text" id="eyeColor" placeholder="Eye Color" required>
+                <div class="button-group">
+                    <button onclick="addPerson()">Save</button>
+                </div> 
+            </div>
+            <div>
+                <h3>People</h3>
+                <hr style="margin-top: 5px;">
+                <p id="cardsContainer"></p>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="form-container">
+
+                <h3>Enter Animal Information</h3>
+                <div style="margin-top: 15px;">
+                    <label for="pet-name">Name:</label>
+                    <input type="text" id="pet-name">
+
+                    <label for="pet-bdate">Birthdate:</label>
+                    <input type="date" id="pet-bdate">
+                </div>
+                <div class="button-group" style="margin-top: 20px;">
+                    <button type="button" onclick="createPetElement()">Add Pet</button>
+                </div>
+            </div>
+            <div>
+                <h3>Animals</h3>
+                <hr style="margin-top: 5px;">
+                <section id="pets" style="min-height: 60px;">
+
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div id="footer-placeholder"></div>
+    </footer>
+
+    <!-- script -->
+    <!-- you put scripts at the bottom of the page bacuase you want the html to load first -->
+    <script src="/js/lab-3.js"></script>
+    <script src="/js/snippet.js"></script>
+</body>
+</html>

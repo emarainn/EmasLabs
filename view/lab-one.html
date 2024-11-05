@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nimphiue | Lab 1</title>
+    <!-- style sheets -->
+     <!-- / links to the root of the foler. so you do /css/styles.css -->
+    <link rel="stylesheet" href="/css/style.css"> 
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/stylesheet.css" />
+</head>
+<body>
+    <header>
+        <div id="header-placeholder"></div>
+    </header>
+
+    <main class="container">
+        <section class="card">
+            <div class="card-body">
+                <h1>Console Conversation</h1>
+            <p style="padding-top:5px; padding-bottom: 10px;">Select a button to interact.</p>
+            <div class="button-group">
+                <div class="user-input">
+                    <input type="text" id="username" placeholder="Enter your name" />
+                    <button onclick="sayHello()">Say Hello</button>
+                </div>
+                <button onclick="discussDay()">Discuss Day</button>
+                <button onclick="sayGoodbye()">Say Goodbye</button>
+                <button onclick="converse()">Converse</button>
+            </div>
+            </div>
+        </section>
+
+        <section class="card" style="margin-left: 15px; padding-top: 20px;">
+            <h1>Console Output</h1>
+            <p style="padding-top:5px; padding-bottom: 10px;">If you inspect the console will match.</p>
+            <hr style="margin-bottom: 20px;">
+            <div class="console-output">
+                <p><b>Say Hello: </b><span id="output-hello"></span></p>
+                <p><b>Discuss Day: </b><span id="output-day"></span></p>
+                <p><b>Say Goodbye: </b><span id="output-goodbye"></span></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div id="footer-placeholder"></div>
+    </footer>
+
+    <!-- script -->
+    <!-- you put scripts at the bottom of the page bacuase you want the html to load first -->
+    <script src="/js/lab-1.js"></script>
+    <script src="/js/snippet.js"></script>
+</body>
+</html>
