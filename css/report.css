@@ -1,0 +1,134 @@
+:root{
+    --color-dark: #267365;
+    --color-dar: #F28705;
+    --color-light: #5E8C30;
+    --color-accent: #F2421B;
+    --color-link: #E8003C;
+    --color-hover: #F29F05;
+    --color-background: #f0f0f0;
+    --color-paper-shadow: rgba(0, 0, 0, 0.2);
+}
+
+main{
+    padding: 20px;
+    min-height: 28rem;
+}
+
+/* .star {
+    position: absolute;
+    width: 30px; 
+    height: 30px; 
+    background-color: var(--color-hover);
+    border-radius: 50%;
+    cursor: pointer;
+    animation: fall 5s linear; 
+    z-index: 10; 
+} */
+
+.star {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: var(--color-hover);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    cursor: pointer;
+    animation: fall 5s linear;
+    z-index: 10;
+}
+
+
+
+@keyframes fall {
+    0% { top: -30px; }
+    100% { top: 100%; }
+}
+
+#start-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--color-dar);
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+    max-width: 200px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#start-button:hover {
+    background-color: var(--color-hover); 
+    transform: scale(1.05); 
+}
+
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ensure the content is centered vertically */
+    margin-top: -75px;
+  }
+  
+  .col {
+    margin: 0 20px; /* Add some spacing between the columns */
+  }
+  
+  #game-area {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background-color: #333;
+    overflow: hidden;
+    margin: 0 auto;
+    border: 2px solid white;
+}
+  
+  #score-board, #timer-board {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+  
+  #game-info {
+    margin-top: -13.7pc;
+  }
+
+  .score-timer {
+    padding-top: 15px;
+  }
+
+  #timer-board {
+    background-color: var(--color-accent);
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 22px;
+  }
+
+  #white-space {
+    background-color: rgb(243, 243, 243);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#score-board {
+    background-color: rgba(0, 0, 0, 0.7); 
+    color: #fff;
+    padding: 10px 20px;  
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+    display: flex; 
+    align-items: center;  
+    justify-content: center; 
+  }
+  
+  #score-label {
+    font-weight: bold; 
+  }
+  
+  #score {
+    font-size: 24px;
+    margin-left: 5px; 
+  }

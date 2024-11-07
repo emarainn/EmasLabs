@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nimphiue | Report</title>
+    <!-- style sheets -->
+    <!-- / links to the root of the foler. so you do /css/styles.css -->
+    <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="/css/report.css" />
+    <link rel="stylesheet" href="/css/stylesheet.css" />
+  </head>
+  <body>
+    <header>
+      <div id="header-placeholder"></div>
+    </header>
+
+    <main>
+      <div class="game-container">
+        <div class="row">
+          <div class="col">
+            <div id="game-area"></div>
+          </div>
+          <div class="col">
+            <div id="game-info">
+              <div id="start-button" onclick="startGame()">Start Game</div>
+
+              <div class="score-timer">
+                <div id="timer-board">
+                  <div id="white-space">
+                    <p style="padding-left: 5px">
+                      <b>Time: <span id="timer">15</span>s</b>
+                    </p>
+                  </div>
+                </div>
+
+                <div id="score-board">
+                  <span id="score-label">Score: </span><span id="score">0</span>
+                </div>
+
+                <!-- <div id="score-board">Score: <span id="score">0</span></div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div id="footer-placeholder"></div>
+    </footer>
+
+    <!-- script -->
+    <!-- you put scripts at the bottom of the page bacuase you want the html to load first -->
+    <script src="/js/report.js"></script>
+    <script src="/js/snippet.js"></script>
+  </body>
+</html>
